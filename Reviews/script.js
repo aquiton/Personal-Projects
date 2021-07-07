@@ -1,7 +1,16 @@
+const previous = document.getElementById("previous");
+const next = document.getElementById("next");
+const random = document.getElementById("random");
+var node = 0;
+var img = "";
+var job = "";
+var text = "";
+var person = "";
+var id;
 const reviews = [
     {
       id: 1,
-      name: "susan smith",
+      name: "Susan Smith",
       job: "web developer",
       img:
         "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
@@ -10,7 +19,7 @@ const reviews = [
     },
     {
       id: 2,
-      name: "anna johnson",
+      name: "Anna Johnson",
       job: "web designer",
       img:
         "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
@@ -19,7 +28,7 @@ const reviews = [
     },
     {
       id: 3,
-      name: "peter jones",
+      name: "Peter Jones",
       job: "intern",
       img:
         "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg",
@@ -28,7 +37,7 @@ const reviews = [
     },
     {
       id: 4,
-      name: "bill anderson",
+      name: "Bill Anderson",
       job: "the boss",
       img:
         "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
@@ -36,3 +45,54 @@ const reviews = [
         "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
     },
   ];
+
+previous.addEventListener("click",function(){
+  node = node - 1;
+  if(node < 0){
+    node = 3;
+  }
+  updateScreen(node);
+})
+
+next.addEventListener("click",function(){
+  node = node + 1;
+  if(node == 4){
+    node = 0;
+  }
+ 
+  updateScreen(node);
+
+})
+
+random.addEventListener("click",function(){
+  var temp_node = node;
+  while(node == temp_node){
+  temp_node = Math.floor(Math.random() * 4);
+  }
+  node = temp_node;
+  updateScreen(node);
+  
+})
+
+function updateScreen(node){
+  id = reviews[node].id;
+  img = reviews[node].img;
+  job = reviews[node].job;
+  text = reviews[node].text;
+  person = reviews[node].name;
+  document.getElementById("person-img").style.backgroundImage = "url("+img+")";
+  document.getElementById("name").innerHTML = person;
+  document.getElementById("description").innerHTML = text;
+  document.getElementById("profession").innerHTML = job;
+  if(id == 2 || id == 4){
+    document.getElementById("person-img").style.backgroundSize = "155%";
+  }else{
+    document.getElementById("person-img").style.backgroundSize = "100%";
+  }
+}
+
+
+
+
+
+
