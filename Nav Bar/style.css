@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+
+
+body {
+    background-color: #363636;
+    padding: 0;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+nav {
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+ul {
+    
+    padding: 0;
+    width: 800px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+hr {
+    width: 10px;
+    animation: bar-animation 1s;
+    width: 52%
+    
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+    color: White;
+    font-size: 20px;
+    padding: 2px;
+    
+    padding: 2px 10px 2px 10px;
+    
+    
+    
+}
+
+.links{
+    opacity: 0%;
+    animation: navbar-animation 1s ;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+.title{
+    border: none;
+    color: transparent;
+    font-weight: bold;
+    animation: nav-animation 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.navbar {
+    color: transparent;
+    opacity: 100%;
+    animation-name: navbar-logo;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    margin: 0;
+}
+
+@keyframes bar-animation {
+    from {
+        width: 1%;
+    }
+
+    to {
+        width: 52%;
+    }
+}
+
+@keyframes navbar-animation {
+
+    from{
+        opacity: 0%;
+        transform: translateY(100%);
+    }
+
+    to{
+        opacity: 100%;
+        transform: translateY(1%);
+        
+    }
+    
+}
+
+@keyframes nav-animation {
+    from{
+        box-shadow: inset 0px 0 1px #c96c02, inset 0px 0 1px #c96c02;
+    }
+
+    to{
+        box-shadow: inset -100px 0 1px #c96c02, inset 100px 0 1px #c96c02;
+        
+    }
+}
+
+@keyframes navbar-logo {
+    from{
+        color: transparent;
+    }
+
+    to{
+        color: white;
+    }
+}
