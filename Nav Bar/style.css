@@ -74,6 +74,63 @@ li{
     margin: 0;
 }
 
+
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 350px;
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    font-family: monospace;
+    color: #696969;
+    animation-name: helloworld-opacity;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    opacity: 0%;
+    animation-fill-mode: forwards;
+}
+
+span { 
+    animation-name: no-letterhover;
+    animation-duration: 1s;
+    cursor: default; 
+}
+
+.letterspacing {
+    opacity: 0%;
+}
+
+span:hover {
+    animation-name: letterhover;
+    animation-duration: 1s;
+    color: #c96c02;
+    cursor: default;
+}
+
+button {
+    position: fixed;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-width: 5px;
+    border-color: black;
+}
+
+.explode {
+    animation-name: exploded-animation;
+    animation-duration: 1s;
+
+}
+
+
+
+
+
 @keyframes bar-animation {
     from {
         width: 1%;
@@ -117,5 +174,52 @@ li{
 
     to{
         color: white;
+    }
+}
+
+@keyframes letterhover {
+    from{
+        color: #696969;
+    }
+
+    to{
+        color: #c96c02
+    }
+}
+
+@keyframes no-letterhover {
+    from{
+        color: #c96c02;
+    }
+
+    to{
+        color: #696969;
+    }
+}
+
+@keyframes helloworld-opacity {
+    from {
+        opacity: 0%;
+    }
+
+    to{
+        opacity: 100%;
+    }
+}
+
+@keyframes exploded-animation {
+    from {
+        border-width: 0px;
+        padding: 0px;
+        background-color: #ff2600;
+        box-shadow: 0 0 5px 0 #d62202, 0 0 25px #db3300, 0 0 50px #db3300, 0 0 200px 
+        #dba100;
+    }
+
+    to {
+        border-width: 5px;
+        padding: 850px;
+        background-color: #f8e36b;
+        
     }
 }
