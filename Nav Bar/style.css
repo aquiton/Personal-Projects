@@ -112,20 +112,7 @@ span:hover {
     cursor: default;
 }
 
-button {
-    position: fixed;
-    padding: 5px;
-    border-radius: 50%;
-    background-color: transparent;
-    border-width: 5px;
-    border-color: black;
-}
 
-.explode {
-    animation-name: exploded-animation;
-    animation-duration: 1s;
-
-}
 
 
 
@@ -207,19 +194,3 @@ button {
     }
 }
 
-@keyframes exploded-animation {
-    from {
-        border-width: 0px;
-        padding: 0px;
-        background-color: #ff2600;
-        box-shadow: 0 0 5px 0 #d62202, 0 0 25px #db3300, 0 0 50px #db3300, 0 0 200px 
-        #dba100;
-    }
-
-    to {
-        border-width: 5px;
-        padding: 850px;
-        background-color: #f8e36b;
-        
-    }
-}
