@@ -1,0 +1,48 @@
+body {
+    background: #db075c;
+}
+
+.box {
+    width: 500px;
+    height: 250px;
+    background-color: #07144a;
+    position: relative;
+    margin: auto;
+    top: 250px;
+    border-radius: 10px; 
+}
+
+ul{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 4px;
+    
+}
+
+li {
+    list-style-type: none;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+button{
+    width: 1px;
+    height: 16px;
+    border-radius: 100%;
+    border-color: transparent;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+
+
