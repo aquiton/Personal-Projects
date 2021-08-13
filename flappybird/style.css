@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    background-color: #34d8eb;
+}
+
+.bird {
+    background-color: yellow;
+    display: inline-block;
+    border: black;
+    border-width: 5px;
+    border-style: solid;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: 50px;
+    left: 200px;
+}
+
+.grass {
+    background-color: green;
+    padding: 0;
+    position: absolute;
+    top: 93%;
+    width: 100%;
+    padding-bottom: 50px;
+    box-shadow: 0px -5px 5px green;
+}
+
+.play_button{
+    background-color: transparent;
+    border-color: black;
+    position: relative;
+    top: 300px;
+    left: 270px;
+    font-size: 30px;
+}
