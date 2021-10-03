@@ -2,6 +2,8 @@ const bird = document.getElementById("bird");
 const play_button = document.getElementById("play_button");
 const restart_button = document.getElementById("restart_button");
 
+const score = document.getElementById("score");
+
 const grass = document.getElementById("grass");
 const actual_grass = document.getElementById("actual_grass");
 const volcano1 = document.getElementById("volcano1");
@@ -15,6 +17,7 @@ var stop_running = false;
 var velocity = 1;
 var play = false;
 var dead = false;
+var score_counter = 0;
 
 
 var body = document.body;
@@ -122,6 +125,8 @@ document.addEventListener("keydown", function(e){
         if(e.key == " "){
             console.log("jumped");
             velocity -= 10;
+            score_counter += 1;
+            score.innerHTML = score_counter;
         }
     }
 })  
