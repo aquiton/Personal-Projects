@@ -9,6 +9,16 @@ body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
 
 nav {
     

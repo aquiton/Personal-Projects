@@ -29,16 +29,31 @@ h1 {
 }
 
 button{
-    display: flex;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.button-list{
+    list-style-type: none;
+    
     position: relative;
     top: 100px;
     left: 50%;
+    display: inline-block;
 }
 
 .scoreboard {
     list-style-type: none;
+    position: static;
 }
 
 .score-content{
-    display: inline-block;
+    display: inline;
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+    display: inline;
 }

@@ -8,19 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box">
-        <ul>
-            <li><div>
-                <button class="red"></button>
-            </div></li>
-            <li><div>
-                <button class="yellow"></button>
-            </div></li>
-            <li><div>
-                <button class="green"></button>
-            </div></li>
-        </ul>
-    </div>
+        <button class="new-list" id="addbutton">+</button>
+        <div class="box" id="box">
+            <ul id="boxheader">
+                <li><div>
+                    <button class="red" id="red"></button>
+                </div></li>
+                <li><div>
+                    <button class="yellow" id="yellow"></button>
+                </div></li>
+                <li><div>
+                    <button class="green" id="green"></button>
+                </div></li>
+                <li>
+                    <div class="note-title">
+                        title
+                    </div>
+                </li>
+            </ul>
+            <textarea id="inputbox" class="inputbox" name="note" rows="13" cols="67" placeholder="Add Note!"></textarea>
+        </div>
+
+
+
+
 </body>
 <script src="script.js"></script>
 </html>

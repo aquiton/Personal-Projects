@@ -13,12 +13,21 @@
         <li class="header-material">Version-Demo</li>
         <li class="header-material">Devs</li>
     </ul>
-    <button id="banana">Farm Banana</button>
+    <ul class="button-list">
+        <li><button id="bananaBtn">Farm Banana</button></li>
+        <li><button id="sellBtn">Sell Bananas</button></li>
+        <li><button id="monkeyBtn">Buy Monkey</button></li>
+        <li><button id="farmBtn">Buy  Banana Farm</button></li>
+    </ul>
+    
     <ul class="scoreboard">
-        <li class="score-name score-content">Bananas:</li>
-        <li class="score-counter score-content" id="score-counter">0</li>
+        <li class="money-score score-content"><div>Money: <p id="money-counter">0</p></div></li>
+        <li class="banana-score score-content"><div>Bananas: <p id="banana-counter">0</p></div></li>
+        <li class="monkey-counter-name score-content"><div>Monkeys: <p id="monkey-counter">0</p></div></li>
+        <li class="farm-counter-name score-content"><div>Farms: <p id="farm-counter">0</p></div></li>
     </ul>
     
 </body>
-<script src="script.js"></script>
+<script src="account.js"></script>
+<script src="main.js"></script>
 </html>
